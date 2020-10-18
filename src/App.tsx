@@ -1,58 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { css } from 'emotion'
+import TopBar from './components/TopBar/TopBar'
+import Container from './components/Container/Container'
+import { fetchItems } from './features/itemsSlice'
+import { RootState } from './app/store'
+import { Loader } from './components/Loader/Loader'
+
+const style = css`
+  height: 100%;
+`
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
-  );
+  const dispatch = useDispatch()
+  const { isLoading } = useSelector((state: RootState) => state.items)
+
+  useEffect(()=>{
+    dispatch(fetchItems())
+  },[])
+
+  return <div className={style}>
+    <TopBar />
+    {isLoading ? <Loader/> : <Container/>}
+  </div>
 }
 
 export default App;
