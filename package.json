@@ -45,5 +45,9 @@
     "scripts": {
       "pre-push": "yarn build && surge --project ./build --domain wretched-pot.surge.sh"
     }
+  },
+  "devDependencies": {
+    "git-scripts": "^0.4.3",
+    "surge": "^0.21.6"
   }
 }
