@@ -1,3 +1,3 @@
 # Users List
 
-## Demo @ wretched-pot.surge.sh
+## Demo @ http://wretched-pot.surge.sh
