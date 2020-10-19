@@ -25,7 +25,7 @@ export const itemsSlice = createSlice({
     getItemsSuccess(state, { payload }) {
         state.isLoading = false
         state.error = null
-        state.items = payload;
+        state.items = payload
     },
     getItemsFailure(state, { payload }){
         state.error = payload

@@ -21,9 +21,9 @@ const ItemsList = () => {
         <ul>
             <h2>Items</h2>
             {items.map(({id, name},key)=><li key={key} onClick={()=>handleClick(id)}>
-                <img src={active} alt="" width='25' height='25'/>
+                <img src={active} alt="" width='23' height='23'/>
                 {name}
-                {current?.id===id && <img src={arrow} alt="" width='25' height='25'/>}
+                {current?.id===id && <img src={arrow} alt="" width='18' height='18'/>}
             </li>)}
         </ul>
     </div>

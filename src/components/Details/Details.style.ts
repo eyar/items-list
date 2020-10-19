@@ -7,25 +7,24 @@ export default css`
         background: #01d1b2;
         color: white;
         width: 100%;
-        font-size: 24rem;
+        font-size: 20rem;
     }
     h2{
-        font-size: 13rem;
+        font-size: 10rem;
         color: #7cc5f6;
-        margin-bottom: 21px;
+        margin-bottom: 15px;
     }
     label{
-        font-size: 13rem;
+        font-size: 10rem;
         color: #c6d1df;
-        margin-bottom: 15px;
-        padding-left: 1px;
+        margin-bottom: 10px;
         + div{
             background: #f5f5f5;
-            font-size: 14rem;
-            padding-left: 14px;
-            margin-bottom: 28px;
-            line-height: 1.6;
-            height: 24px;
+            font-size: 9rem;
+            padding-left: 11px;
+            margin-bottom: 23px;
+            line-height: 1.9;
+            height: 21px;
             color: #b1a099;
         }
     }
@@ -33,10 +32,10 @@ export default css`
         list-style: none;
         li{
             background: #f5f5f5;
-            padding-left: 18px;
+            padding-left: 13px;
             line-height: 2.6;
-            height: 40px;
-            font-size: 14rem;
+            height: 31px;
+            font-size: 11rem;
             color: #c1c6d9;
             margin-bottom: 4px;
         }
@@ -57,33 +56,32 @@ export default css`
         }
     }
     @media (min-width: ${desktopBreakpoint}){
-        width: 1232px;
-        height: 553px;
-        margin: 48px 0 0 151px;
+        width: 986px;
+        height: 443px;
+        margin: 37px auto;
         border: 2px solid #e8e9eb;
         h1{
-            height: 117px;
-            padding: 18px 0 0 22px;
+            height: 94px;
+            padding: 14px 0 0 17px;
         }
         .columns{
             display: flex;
             label + div{
-                width: 650px;
+                width: 520px;
             }
             .details{
                 height: 300px;
-                width: 650px;
-                margin: 31px 0 0 23px;
+                width: 520px;
+                margin: 22px 0 0 18px;
             }
             .actions{
                 height: 300px;
-                width: 500px;
-                margin: 31px 0 0 0;
+                margin: 22px 0 0 0;
                 ul{
                     padding-left: 5px;
-                    margin-top: 53px;
+                    margin-top: 40px;
                     li{
-                        width: 505px;
+                        width: 402px;
                     }
                 }
             }

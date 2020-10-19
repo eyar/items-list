@@ -3,11 +3,10 @@ import { css } from 'emotion'
 import { desktopBreakpoint } from '../../features/GlobalStyles'
 
 const styles = css`
-    height: 68px;
+    height: 55px;
     background-color: #343a40;
     a{
         font-size: 33rem;
-        padding: 8px 0;
         display: block;
         color: white;
         &:hover, &:visited, &:active{
@@ -17,7 +16,7 @@ const styles = css`
     }
     @media (max-width: ${desktopBreakpoint}){
         a{
-            padding-left: 10px;
+            padding: 8px 0 0 10px;
         }
     }
 `

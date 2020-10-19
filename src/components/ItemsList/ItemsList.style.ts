@@ -5,28 +5,29 @@ export default css`
     list-style: none;
     background: white;
     h2{
-        font-size: 25rem;
-        margin: 18px 0 34px 18px;
+        font-size: 20rem;
+        margin: 14px 0 26px 14px;
     }
     ul{
         list-style: none;
         padding-left: 0;
         li{
-            font-size: 17rem;
+            font-size: 13rem;
             display: flex;
-            height: 44px;
+            height: 36px;
             align-items: center;
             position: relative;
             cursor: pointer;
+            border-bottom: 2px solid #F2F2F2;
             &:hover{
                 background: #f8f9fa;
             }
             img{
                 display: flex;
-                margin: auto 3px;
+                margin: auto 1px;
                 + img{
                     position: absolute;
-                    right: 18px;
+                    right: 13px;
                 }
             }
         }
@@ -37,6 +38,6 @@ export default css`
         }
     }
     @media (min-width: ${desktopBreakpoint}){
-        width: 385px;
+        width: 307px;
     }
 `
