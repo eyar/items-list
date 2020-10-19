@@ -19,6 +19,9 @@ export default css`
             position: relative;
             cursor: pointer;
             border-bottom: 2px solid #F2F2F2;
+            &:first-of-type{
+                border-top: 2px solid #F2F2F2;
+            }
             &:hover{
                 background: #f8f9fa;
             }
